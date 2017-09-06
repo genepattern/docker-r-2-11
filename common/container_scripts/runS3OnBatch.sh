@@ -59,6 +59,14 @@ echo "3b. chmodding $GP_METADATA_DIR from $PWD"
 chmod a+rwx $GP_METADATA_DIR/*
 
 
+#
+# allow customization for specific images - eg to install RLIBs
+#
+if [ -f "/usr/local/bin/runS3Batch_prerun_custom.sh" ]; then
+   . /usr/local/bin/runS3Batch_prerun_custom.sh
+fi
+
+
 # run the module
 echo "4. PERFORMING $5"
 $5 >$STDOUT_FILENAME 2>$STDERR_FILENAME
