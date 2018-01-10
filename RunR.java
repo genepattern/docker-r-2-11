@@ -1,6 +1,7 @@
 /*******************************************************************************
- * Copyright (c) 2003, 2015 Broad Institute, Inc. and Massachusetts Institute of Technology.  All rights reserved.
+ * # copyright 2017-2018 Regents of the University of California and the Broad Institute. All rights reserved.
  *******************************************************************************/
+
 
 import java.io.BufferedReader;
 import java.io.File;
